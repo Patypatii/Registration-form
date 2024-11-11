@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Student Registration Form</h2>
+        <div class="registration-number input-details">
+            <label for="reg-number">Registration Number:</label>
+            <input type="text" id="reg-number" placeholder="Reg No" required>
+        </div>
+
+        <div class="name input-details">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="age input-details">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your Age" required>
+        </div>
+
+        <div class="gender">
+            <p>Gender:</p>
+            <label>
+                <input type="radio" value="Male" name="Gender" required>
+                Male
+            </label>
+            <label>
+                <input type="radio" value="Female" name="Gender" required>
+                Female
+            </label>
+        </div>
+
+        <div class="dob">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="programme input-details">
+            <label for="programme">Programme Registered:</label>
+            <input type="text" id="programme" placeholder="Enter your programme" required>
+        </div>
+
+        <div class="school input-details">
+            <label for="school">School:</label>
+            <input type="text" id="school" placeholder="Enter your school" required>
+        </div>
+
+        <div class="mode-of-study">
+            <p>Mode of Study:</p>
+            <label>
+                <input type="radio" value="Full-time" name="Mode-of-study" required>
+                Full-time
+            </label>
+            <label>
+                <input type="radio" value="Part-time" name="Mode-of-study" required>
+                Part-time
+            </label>
+            <label>
+                <input type="radio" value="Online" name="Mode-of-study" required>
+                Online
+            </label>
+        </div>
+
+        <div class="buttons">
+            <input type="reset" name="reset" value="Reset" class="reset">
+            <input type="submit" name="submit" value="Submit">
+            <button type="cancel" name="cancel" onclick="window.history.back();">Cancel</button>
+        </div>
+    </form>
+</body>
+
+</html>

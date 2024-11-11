@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+label {
+    font-size: 20px;
+    color: #1E1926;
+}
+
+p {
+    font-size: 20px;
+    color: #1E1926;
+}
+
+input {
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    color: #1E1926;
+    background-color: #FDF7FF;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #1E1926;
+}
+
+
+
+form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #0000FF 0%, #f7faff 100%);
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-details {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-details input {
+    flex: 1;
+    background-color: #FDF7FF;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    border-image: linear-gradient(to right, #FDF7FF, red) 1;
+}
+.gender, .dob, .mode-of-study {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.gender input, .dob input, .mode-of-study input{
+    background-color: #FDF7FF;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #FDF7FF, red) 1;
+    border-radius: 3px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 20%;
+}
+
+.buttons input, .buttons button {
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+    color: #FDF7FF;
+    background: #1E1926;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #FDF7FF, red) 1;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.buttons button:hover{
+    background: red;
+    transform: scale(1.05);
+    color: #1E1926;
+    border-radius: 0;
+}
+
+.buttons input:hover{
+    background: green;
+    transform: scale(1.05);
+    color: #1E1926;
+    border-radius: 0;
+}
+
+.buttons .reset:hover{
+    background: orange;
+}
