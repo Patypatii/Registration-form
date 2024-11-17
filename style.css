@@ -32,7 +32,12 @@ body {
     height: 100vh;
     margin: 0;
     color: #1E1926;
+    background-image: url(rose-flower.png); /* Path to your image */
+    background-repeat: repeat; /* Ensures the image repeats */
+    background-size: 150px; /* Maintains the original size of the image */
+    background-position: top left; /* Starts tiling from the top-left corner */
 }
+
 
 
 
@@ -46,6 +51,8 @@ form {
     width: 500px;
     height: auto;
     border-radius: 5px;
+    
+
 }
 
 h2 {
@@ -103,7 +110,6 @@ h2 {
     background: #1E1926;
     border: 1px solid transparent;
     border-image: linear-gradient(to right, #FDF7FF, red) 1;
-    border-radius: 10px;
     transition: all .5s;
 }
 
